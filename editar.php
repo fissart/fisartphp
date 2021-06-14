@@ -16,7 +16,7 @@ $g = mysqli_fetch_assoc($user);
 
 
 require  'autoload.php';
-require  'cloudinary/Helpers.php'; // opcional para usar los métodos auxiliares cl_image_tag y cl_video_tag
+require  'src/Helpers.php'; // opcional para usar los métodos auxiliares cl_image_tag y cl_video_tag
 require  'config_cloud.php';
 
 
