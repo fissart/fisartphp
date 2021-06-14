@@ -5,22 +5,6 @@ session_start();
 
 ?>
 <title>Fisart - Matemáticas</title>
-<meta charset="UTF-8">
-<meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<link rel="shortcut icon" type="image/x-icon" href="w.ico">
-
-<script type="text/javascript" src="jsxgraphcore.js"></script>
-<link rel="stylesheet" href="./css/css/bootstrap.min.css">
-
-<script src="jquery-3.0.0.min.js"></script>
-<script src="jquery-1.12.4.js"></script>
-<script src="jquery-ui.min.js"></script>
-
-
-
-
-
 
 <div class="container p-1 my-5 text-center">
     <?php 

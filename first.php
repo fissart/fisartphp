@@ -2,18 +2,11 @@
 <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <link rel="shortcut icon" type="image/x-icon" href="w.ico">
-<link rel="stylesheet" href="font-awesome.min.css">
-
-<!-- CSS only -->
-<link rel="stylesheet" href="css/css/bootstrap.css">
-
-<!-- JS, Popper.js, and jQuery -->
-<script src="jsboots/jquery-3.2.1.js" crossorigin="anonymous"></script>
-
-<script src="popper.min.js">
-</script>
-<script src="css/js/bootstrap.min.js">
-</script>
+<link rel="stylesheet" href="Css/font-awesome.min.css">
+<link rel="stylesheet" href="Css/css/bootstrap.css">
+<script src="Css/jquery-3.0.0.min.js" crossorigin="anonymous"></script>
+<script src="Css/popper.min.js"></script>
+<script src="Css/js/bootstrap.min.js"></script>
 
 <!--
 <style>
@@ -39,10 +32,8 @@
 <?php $user = mysqli_query($link, "SELECT * FROM usuario WHERE idusuario='" . $_SESSION['user'] . "'");
     $w = mysqli_fetch_assoc($user);?>
 
-<div class='container'>
-    <div class='container'>
-
-        <nav class="navbar smart-scroll navbar-expand-lg navbar-light bg-light border py-1">
+    
+<nav class="navbar smart-scroll navbar-expand-lg navbar-light bg-light border py-1">
 
             <a class="navbar-brand" href="inicio.php">
             <?php echo "<div style='width:35px;height:35px;overflow:hidden;border-radius:50%;position:relative;  object-fit:cover;'>
@@ -60,8 +51,6 @@
             </div> <!-- navbar-collapse.// -->
         </nav>
 
-    </div>
-</div>
 
 
 

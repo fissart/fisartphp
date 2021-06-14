@@ -25,25 +25,30 @@ $zzw = mysqli_fetch_assoc($conzw);
 
 <link rel="shortcut icon" type="image/x-icon" href="w.ico">
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-<meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<link rel="shortcut icon" type="image/x-icon" href="w.ico">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<link rel="stylesheet" href="Css/css/bootstrap.css">
+
+<script src="Css/jquery-3.0.0.min.js" crossorigin="anonymous"></script>
+
+<script src="Css/popper.min.js"></script>
+<script src="Css/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="Css/style.css">
+
+<link rel="stylesheet" href="Css/richtext.min.css">
+<script type="text/javascript" src="Css/jquery.richtext.js"></script>
+
+<link rel="stylesheet" href="Css/TimeCirclesday.css">
+<script type="text/javascript" src="Css/TimeCirclesday.js"></script>
+<link rel="stylesheet" href="Css/font-awesome.min.css">
+
+<!-- 
+<link href="Css/css/bootstrap.min.css">
+<script src="Css/jquery-3.0.0.min.js"></script>
+<script src="Css/js/bootstrap.min.js"></script>
 
 
-<link rel="stylesheet" href="jsboots/bootstrap.css">
-<script src="jquery-3.2.1.slim.min.js"></script>
-<script src="jquery-3.5.1.min.js"></script>
-<script src="popper.min.js"></script>
-<script src="bootstrap.min.js"></script>
-<script src="jquery-ui.min"></script>
-<script src='a076d05399.js'></script>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="richtext.min.css">
-<script type="text/javascript" src="richText_js/jquery.richtext.js"></script>
-
-<script type="text/javascript" src="TimeCirclesday.js"></script>
-<link href="TimeCirclesday.css" rel="stylesheet">
 <style>
 /* .card,
 .btn,
@@ -52,7 +57,7 @@ $zzw = mysqli_fetch_assoc($conzw);
 }
 */
 </style>
-
+-->
 <style>
 .componentWrapper {
     position: absolute;

@@ -1,0 +1,37 @@
+.body{
+    margin: 0cm;
+}
+.recortecircular{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: rgb(26, 80, 97);
+    position: relative;
+    object-fit: cover;
+}
+.recortecircularpequeno{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: rgb(22, 57, 63);
+    position: relative;
+    object-fit: cover;
+}
+.centrarenborde {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    /* width: 95%; */
+    transform: translate(-50%, -50%);
+  }
+  .desplazarderecha {
+    position: absolute;
+    top: 0%;
+    left: 95%;
+    /* width: 95%; */
+    transform: translate(-50%, -50%);
+  }

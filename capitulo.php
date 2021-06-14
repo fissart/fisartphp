@@ -1,3 +1,4 @@
+
 <?php
 
 require('conect.php');
@@ -42,19 +43,9 @@ $con = mysqli_query($link, "SELECT clase.nombre FROM clase WHERE clave='" . $_SE
 $wew = mysqli_fetch_assoc($con);
 ?>
 <title>Capítulos de <?php echo $wew['nombre'] ?></title>
-
-<link rel="shortcut icon" type="image/x-icon" href="w.ico">
-
-
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({TeX: {equationNumbers: { autoNumber:"AMS"}}, tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, "HTML-CSS": { availableFonts: ["Tex"] }});
-MathJax.Hub.processSectionDelay = 0;
-</script>
-
-
 <?php include('margin.php'); ?>
+
+
 
 <style>
 table,

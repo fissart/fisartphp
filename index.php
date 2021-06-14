@@ -65,32 +65,16 @@ if (isset($_REQUEST['nombreww']) && !empty($_REQUEST['nombreww'])) {
 ?>
 
 
-
-
-
-
-<meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <link rel="shortcut icon" type="image/x-icon" href="w.ico">
-<script type="text/javascript" src="jsxgraphcore.js"></script>
-
-
-
 
 
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-<link rel="shortcut icon" type="image/x-icon" href="w.ico">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="Css/css/bootstrap.css">
+<link rel="stylesheet" href="Css/font-awesome.min.css">
 
-
-
-<!-- CSS only -->
-<link rel="stylesheet" href="css/css/bootstrap.css">
-<link rel="stylesheet" href="jsboots/font-awesome.min.css">
-<!-- JS, Popper.js, and jQuery -->
-<script src="jsboots/jquery-3.2.1.js" crossorigin="anonymous"></script>
-<script src="css/js/bootstrap.bundle.js" crossorigin="anonymous"></script>
-<script src="css/js/bootstrap.js" crossorigin="anonymous"></script>
+<script src="Css/jquery-3.0.0.min.js" crossorigin="anonymous"></script>
+<script src="Css/js/bootstrap.js" crossorigin="anonymous"></script>
 
 
 <!--
@@ -117,7 +101,6 @@ if (isset($_REQUEST['nombreww']) && !empty($_REQUEST['nombreww'])) {
 <?php
 if(!isset($_SESSION['user'])){
 ?>
-<div class='container'>
     <nav class="navbar smart-scroll navbar-expand-lg navbar-light bg-light border py-1">
         <a class="navbar-brand" href="inicio.php">Fisart</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav"
@@ -136,7 +119,6 @@ if(!isset($_SESSION['user'])){
         </div>
 
     </nav>
-</div>
 
 <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
@@ -289,6 +271,7 @@ body {
 <?php }else{include('first.php'); }?>
 
 
+<!--
 
 <script type='text/javascript'>
 JXG.Options.text.useMathJax = true;
@@ -305,7 +288,6 @@ JXG.Options = JXG.merge(JXG.Options, {
 </script>
 
 
-<!--
 <iframe style="border:none;border-radius:30px 1px 30px 1px;width:95%;height:360px;display:block;margin:auto;" src="3/examples/webgl_points_dynamic.html" seamless></iframe>
 <br><iframe style="border:none;border-radius:3px;width:90%;height:500px;display:block;margin:auto;" src="3/examples/physics_ammo_break.html" seamless></iframe>
 <br><iframe style="border:none;border-radius:3px;width:90%;height:500px;display:block;margin:auto;" src="3/examples/my.html" seamless></iframe>

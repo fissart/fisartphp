@@ -355,22 +355,22 @@ $ww = mysqli_fetch_assoc($conw);
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                         <?php if ($w['tipo'] == 'docente') {?>
                                         <a class="dropdown-item"
-                                            href='secciones.php?clavezz=<?php echo$ww1["idseccion"]?>&clavez=<?php echo $ww["idcapitulo"]?>'>Editar
-                                            sección
+                                            href='secciones.php?clavezz=<?php echo$ww1["idseccion"]?>&clavez=<?php echo $ww["idcapitulo"]?>'>
+                                            <i class='fa fa-edit prefix grey-text' style='font-size:20px'></i>
                                         </a>
                                         <button class="dropdown-item" id='deleteww'
                                             data-idw='<?php echo $ww1["idseccion"]?>'>
-                                            Eliminar sección</button>
+                                            <i class='fa fa-trash' style='font-size:20px'></i></button>
                                         <?php }?>
                                         <button type="button" class="dropdown-item" data-toggle="modal"
                                             data-target="#www<?php  echo $ww1['idseccion']?>">
-                                            Ver sección
+                                            <i class='fa fa-eye prefix grey-text' style='font-size:20px'></i>
                                             <?php echo ($j-1).": ".$ww1['nombre'];?>
                                         </button>
                                         <button type="button" class="dropdown-item" data-toggle="modal"
                                             data-target="#ww<?php  echo $ww1['idseccion']?>">
-                                            Tarea (sección
-                                            <?php echo ($j-1)?> - capítulo
+                                            <i class='fa fa-file prefix grey-text' style='font-size:20px'></i> (S
+                                            <?php echo ($j-1)?> - C
                                             <?php echo ($i-1)?>) hasta
                                             <?php echo $ww1["time"]?>
                                         </button>
@@ -454,7 +454,7 @@ $ww = mysqli_fetch_assoc($conw);
 
                             </div>
                             <?php }while ($ww1 = mysqli_fetch_assoc($conw1));}else {echo "No hay secciones creadas";}?>
-                            $wnw1 = mysqli_num_rows($wconw1);
+                           
                         </div>
                         <?php if ($w['tipo'] == 'docente') {?>
                         <div class="bg-info p-1 mb-3">
