@@ -9,7 +9,7 @@ $ff1 = mysqli_fetch_assoc($ff);
 <?php
 $about2 = mysqli_query($link, "SELECT * FROM land WHERE tipo='logo'");
 $aboutw2 = mysqli_fetch_assoc($about2);
-//	echo "<img id='upfilew2' style='height:155px ;cursor:pointer;' data-c1='rrrr' src= 'archivosland/".$aboutw2['idland']."".$aboutw2['foto']."' onerror=this.src='curso.png'>";
+//	echo "<img id='upfilew2' style='height:155px ;cursor:pointer;' data-c1='rrrr' src= 'archivosland/".$aboutw2['idland']."".$aboutw2['foto']."' onerror=this.src='imagenes/curso.png'>";
 ?>
 
 <div class="container-flex p-0 border-top">
@@ -24,7 +24,7 @@ $aboutw2 = mysqli_fetch_assoc($about2);
                     <p class="footer-company-name"><?php echo $ff1['t3'] ?></p>
                     <div style="margin:10px">
                         <img src="archivosland/<?php echo $aboutw2['idland'] . "" . $aboutw2['foto'] ?>"
-                            onerror=this.src="curso.png" style="height:100px;border-radius:5px;" alt="">
+                            onerror=this.src="./imagenes/curso.png" style="height:100px;border-radius:5px;" alt="">
                     </div>
                 </div>
 

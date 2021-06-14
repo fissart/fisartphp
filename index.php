@@ -66,7 +66,7 @@ if (isset($_REQUEST['nombreww']) && !empty($_REQUEST['nombreww'])) {
 
 
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<link rel="shortcut icon" type="image/x-icon" href="w.ico">
+<link rel="shortcut icon" type="image/x-icon" href="imagenes/w.ico">
 
 
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
@@ -128,7 +128,7 @@ if(!isset($_SESSION['user'])){
             <form action="index.php" method="post">
 
                 <div class="modal-header text-center">
-                    <div style="text-align:center"><img src="ww2.svg" style="width:80px;" alt=""></div>
+                    <div style="text-align:center"><img src="imagenes/ww2.svg" style="width:80px;" alt=""></div>
                     <h4 class="modal-title w-100 font-weight-bold">Iniciar sesión</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -171,7 +171,7 @@ if(!isset($_SESSION['user'])){
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header text-center">
-                <div style="text-align:center"><img src="ww2.svg" style="width:80px;" alt=""></div>
+                <div style="text-align:center"><img src="imagenes/ww2.svg" style="width:80px;" alt=""></div>
 
                 <h4 class="modal-title w-100 font-weight-bold">Resgístrese</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">

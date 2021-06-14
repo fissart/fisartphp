@@ -19,6 +19,7 @@ session_start();
 
     ?>
 
+
     <div class="h2 text-center bg-light border" id='wwnombre' data-c1='<?php echo $aboutw2["idland"] ?>' <?php if
         (isset($_SESSION['user']) && $_SESSION['user']=="8" ){echo "contenteditable" ;}else{;}?>>
         <?php echo $aboutw2['nombre'] ?>
@@ -28,7 +29,7 @@ session_start();
         style=" width: 200px;height: 200px;overflow: hidden;border-radius: 50%;position: relative;" <?php if
         (isset($_SESSION['user']) && $_SESSION['user']=="8" ){echo "id='upfilew2' style='cursor:pointer'" ;}else{;}?>
     src='
-    <?php echo "archivosland/".$aboutw2["idland"] . "" . $aboutw2["foto"] ?>' onerror=this.src='curso.png'>
+    <?php echo "archivosland/".$aboutw2["idland"] . "" . $aboutw2["foto"] ?>' onerror=this.src='imagenes/curso.png'>
 
     <button class="btn btn-info" style='display:none' id='deleter' data-ff='<?php echo $aboutw2["idland"] ?>'><i
             class='fa fa-trash'></i></button>
@@ -220,7 +221,7 @@ session_start();
             </div>
 
             <img class='card-img-top -circle m-auto wrapperest' id='upfilew2' <?php echo "src='archivosland/"
-                .$wwwr1['idland']."".$wwwr1['foto']?>' onerror=this.src='curso.png'>
+                .$wwwr1['idland']."".$wwwr1['foto']?>' onerror=this.src='imagenes/curso.png'>
 
 
             <div class="card-footer p-1" id='ww1' data-c1='<?php echo $wwwr1["idland"] ?>' <?php if (isset($_SESSION['user']) &&
@@ -381,7 +382,7 @@ $ff1 = mysqli_fetch_assoc($ff);
                             <img class="card-img-top -circle m-auto wrapperest update" name='update'
                                 id='<?php echo$curso["idclase"]?>' data-id='<?php echo $curso1["id"]?>'
                                 src='<?php echo"archivoscrearclase/".$curso1["id"] . "_" . $curso["idclase"] . "_" . $curso["foto"]?>'
-                                onerror=this.src='curso.png'>
+                                onerror=this.src='imagenes/curso.png'>
                             </div>
 
                             <div class="card-footer p-1" style="display:none;">

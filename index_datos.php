@@ -77,13 +77,13 @@ $t=$_FILES['filesww']['size'];
 $wr=mysqli_query($link,"SELECT * FROM land WHERE idland='$id' AND tipo='foto' OR tipo='logo'");
 $wrw=mysqli_fetch_assoc($wr);
 
-unlink('archivosland/'.$id.$wrw['foto']);
+unlink('archivoslandscape/'.$id.$wrw['foto']);
 
 
 $consulta=mysqli_query($link,"UPDATE land SET foto='$na' WHERE idland =$id");
 
 //$idarchivo=mysqli_insert_id($link);
-copy($_FILES['filesww']['tmp_name'],"archivosland/".$id.$na);
+copy($_FILES['filesww']['tmp_name'],"archivoslandscape/".$id.$na);
 if(!$consulta){
   echo "no ok";
 }else{
@@ -102,7 +102,7 @@ $tipo=$_FILES['filesw']['type'];
 $t=$_FILES['filesw']['size'];
 $consulta=mysqli_query($link,"INSERT INTO land VALUES (NULL, 'Nombre', 'Texto', '$na', NULL , 'foto', NULL, NULL)");
 $idarchivo=mysqli_insert_id($link);
-copy($_FILES['filesw']['tmp_name'],"archivosland/".$idarchivo.$na);
+copy($_FILES['filesw']['tmp_name'],"archivoslandscape/".$idarchivo.$na);
 if(!$consulta){
   echo "no ok";
 }else{
@@ -120,7 +120,7 @@ $wr=mysqli_query($link,"SELECT * FROM land WHERE idland='$id' AND tipo='foto' OR
 $wrw=mysqli_fetch_assoc($wr);
 
 $consulta=mysqli_query($link, "DELETE FROM land WHERE idland=$id");
-unlink('archivosland/'.$id.$wrw['foto']);
+unlink('archivoslandscape/'.$id.$wrw['foto']);
 //$consulta=mysqli_query($link, "DELETE FROM secciones WHERE clavew=$id");
 //$consulta=mysqli_query($link, "DELETE FROM tareas WHERE clavew=$id");
 //mysqli_query($link, "DELETE FROM tareas WHERE clavew='".$_REQUEST['e']."'");

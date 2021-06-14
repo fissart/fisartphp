@@ -64,7 +64,7 @@ $wew = mysqli_fetch_assoc($con);
 
                 <img class="card-img-top -circle m-auto wrapperestf update"
                     src='http://res.cloudinary.com/ciencias/image/upload/<?php echo $docent["foto"];?>'
-                    onerror=this.src='foto.png'>
+                    onerror=this.src='imagenes/foto.png'>
 
                 <div class='card-footer p-1' style='height:3.5em'>
                     <?php echo $docent['nombre'] ?>
@@ -141,7 +141,7 @@ $wew = mysqli_fetch_assoc($con);
 
                 <img class="card-img-top -circle m-auto wrapperestf update"
                     src='http://res.cloudinary.com/ciencias/image/upload/<?php echo $estudiant["foto"];?>'
-                    onerror=this.src='foto.png'>
+                    onerror=this.src='imagenes/foto.png'>
 
 
                 <div class='card-footer p-1'>

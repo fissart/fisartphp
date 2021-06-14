@@ -163,7 +163,7 @@ if ($nm > 0) {
         <div class="container border border-info rounded-lg  mb-1 p-1">
             <?php echo $i;?> <img class="card-img-top -circle m-auto wrappw update border"
                 src='http://res.cloudinary.com/ciencias/image/upload/<?php echo $estudiant["foto"];?>'
-                onerror=this.src='foto.png'>
+                onerror=this.src='imagenes/foto.png'>
             <?php echo $estudiant['nombre']."--".$estudiant['idusuario']?>
             <div class="float-right ml-auto">
                 <?php echo "#tareas ".$ntareasest." Nota examenes: ".round($ggg/($npreg+1),3)." Nota tareas: ".round($sumt/($ntareas+1),3)." Promedio: ".round(($ggg/($npreg+1)+$sumt/($ntareas+1))/2,3) ?>

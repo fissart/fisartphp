@@ -108,7 +108,7 @@ td {
 <div class="container p-1 my-1 border bg-info rounded text-light">
     <img class="card-img-top -circle m-auto wrappww update"
         src='http://res.cloudinary.com/ciencias/image/upload/<?php echo $estudiant["foto"];?>'
-        onerror=this.src='foto.png'>
+        onerror=this.src='imagenes/foto.png'>
     <?php echo $estudiant['nombre']?>
 </div>
 

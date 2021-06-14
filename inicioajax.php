@@ -202,7 +202,7 @@ $w = mysqli_fetch_assoc($user);
                             } else {
                                 echo "class='card-img-top -circle m-auto wrapperest'";
                             } ?> <?php echo "name='update' id='" . $curso["idclase"] . "' data-id='" . $curso1["id"] . "' src='archivoscrearclase/" . $curso1["id"] . "_" . $curso["idclase"] . "_" . $curso["foto"] . "'" ?>
-                                    onerror=this.src='curso.png'>
+                                    onerror=this.src='imagenes/curso.png'>
 
                             </div>
 
