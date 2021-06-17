@@ -55,13 +55,6 @@ $todoslosarchivo = mysqli_fetch_assoc($queryarchivos);
 
 ?>
 <div class="container p-1 my-1 ">
-    <div class="card text-center mb-1 bg-info text-white">
-        Se considerará las horas de teóricas como sincrónicas (virtual presencial) y las horas de práctica como
-        asincrónicas
-        (trabajos prácticos, trabajos grupales, seminarios, trabajo semestral de investigación de un tema de interés en
-        la carrera
-        implicado con el aprendizaje significativo).
-    </div>
     <div class="card text-center p-0  border border-info rounded mt-5">
         <h3 class='componentWrapper color rounded border border-info text-center'>ARCHIVOS</h3>
         <div class="card-body">

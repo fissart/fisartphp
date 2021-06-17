@@ -12,7 +12,7 @@ if(!$consulta){
   echo "ok";
 }
 }
-
+  
 //insert beneficios
 if(isset($_REQUEST['text'])){
 $texto=$_POST['text'];
@@ -129,5 +129,4 @@ if(!$consulta){
 }else{
   echo "ok delete";
 }
-
 }

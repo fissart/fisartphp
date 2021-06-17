@@ -23,7 +23,7 @@ $zzw = mysqli_fetch_assoc($conzw);
 
 ?>
 
-<link rel="shortcut icon" type="image/x-icon" href="w.ico">
+<link rel="shortcut icon" type="image/x-icon" href="imagenes/w.ico">
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
@@ -34,7 +34,7 @@ $zzw = mysqli_fetch_assoc($conzw);
 <script src="Css/popper.min.js"></script>
 <script src="Css/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="Css/style.css">
+<link rel="stylesheet" href="Css/estilos.css">
 
 <link rel="stylesheet" href="Css/richtext.min.css">
 <script type="text/javascript" src="Css/jquery.richtext.js"></script>

@@ -29,7 +29,7 @@ session_start();
         style=" width: 200px;height: 200px;overflow: hidden;border-radius: 50%;position: relative;" <?php if
         (isset($_SESSION['user']) && $_SESSION['user']=="8" ){echo "id='upfilew2' style='cursor:pointer'" ;}else{;}?>
     src='
-    <?php echo "archivosland/".$aboutw2["idland"] . "" . $aboutw2["foto"] ?>' onerror=this.src='imagenes/curso.png'>
+    <?php echo "archivoslandscape/".$aboutw2["idland"] . "" . $aboutw2["foto"] ?>' onerror=this.src='imagenes/curso.png'>
 
     <button class="btn btn-info" style='display:none' id='deleter' data-ff='<?php echo $aboutw2["idland"] ?>'><i
             class='fa fa-trash'></i></button>
@@ -220,7 +220,7 @@ session_start();
                 <?php echo$wwwr1['nombre'] ?>
             </div>
 
-            <img class='card-img-top -circle m-auto wrapperest' id='upfilew2' <?php echo "src='archivosland/"
+            <img class='card-img-top -circle m-auto wrapperest' id='upfilew2' <?php echo "src='archivoslandscape/"
                 .$wwwr1['idland']."".$wwwr1['foto']?>' onerror=this.src='imagenes/curso.png'>
 
 

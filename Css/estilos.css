@@ -1,6 +1,15 @@
-.body{
-    margin: 0cm;
+body {
+    margin: 0px;
+    padding: 0px;
 }
+
+h1 {
+    margin: 0px;
+}
+
+@media screen and (max-width:800px) {
+}
+
 .recortecircular{
     width: 200px;
     height: 200px;

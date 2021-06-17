@@ -123,12 +123,6 @@ $w = mysqli_fetch_assoc($user);
                 </div>
 
             </div>
-            <div class=''>
-                Estimado estudiante rectifique sus apellidos y nombres en ese orden (es decir primero los
-                apellidos y luego los nombres) haciendo click sobre la foto. Por ejemplo CHAVEZ GAMBOA, NANCY
-                YENY.
-            </div>
-
         </div>
 
         <div class="container p-1" style="display:none;">

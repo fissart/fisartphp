@@ -12,9 +12,6 @@ if(isset($_REQUEST['cerrar'])){
    header("Location:index.php");
 }
 
-
-//   echo $_SESSION['idcpt']."--";
-//   echo $_SESSION['idsec'];
 ?>
 
 <title>Inicio</title>

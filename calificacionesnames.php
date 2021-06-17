@@ -117,9 +117,6 @@ if ($nm > 0) {
         $sumw = $roww['sumw'];
         $wggg = $sumw + $sum;
 
-/////////////////////////////////////////////////////////////////////////// EF
-
-
         $npreg = mysqli_num_rows(mysqli_query($link, "SELECT * FROM capitulo WHERE clave ='".$_SESSION['clave']."'"));
         //preguntas escritas 
         $nprege = mysqli_num_rows(mysqli_query($link, "SELECT * FROM examen WHERE clavecurso ='".$_SESSION['clave']."' AND tipo='escrita'"));
@@ -170,7 +167,7 @@ if ($nm > 0) {
             </div>
 
             <div class="progress small my-1" style="height:20px">
-                <div class="progress-bar bg-danger text-left p-1" style="width:<?php echo ((0.2)*round($rsumww/($nforo*5)*20/100,3)+(0.2)*round($sumt/($ntareas+1),3)
+                <div class="progress-bar bg-danger text-center text-info p-0" style="width:<?php echo ((0.2)*round($rsumww/($nforo*5)*20/100,3)+(0.2)*round($sumt/($ntareas+1),3)
                     +(0.3)*round(($ggg-$wggg)/($npreg),3)+(0.3)*($w7))*100/20?>%;height:20px">
                     PF=0.2AP+0.2TE+0.3EP+0.3EF=<?php echo (0.2)*round($rsumww/($nforo*5)*20/100,3)+
                     (0.2)*round($sumt/($ntareas),3)
@@ -180,26 +177,26 @@ if ($nm > 0) {
             </div>
 
             <div class="progress small my-1" style="height:20px">
-                <div class="progress-bar bg-info  text-left p-1"
+                <div class="progress-bar bg-info  text-center text-info p-0"
                     style="width:<?php echo ($ggg-$wggg)/($npreg)*100/20;?>%;height:20px">
                     <?php echo "Exa Parc=".round(($ggg-$wggg)/($npreg-1),3);?>
                 </div>
             </div>
 
             <div class="progress small mt-1" style="height:20px">
-                <div class="progress-bar bg-primary  text-left p-1" style="width:<?php echo $w7*100/20;?>%;height:20px">
+                <div class="progress-bar bg-primary  text-center text-info p-0" style="width:<?php echo $w7*100/20;?>%;height:20px">
                     <?php echo "Exa Fin=".$w7;?>
                 </div>
             </div>
 
             <div class="progress small my-1" style="height:20px">
-                <div class="progress-bar bg-warning  text-left p-1"
+                <div class="progress-bar bg-warning  text-center text-info p-0"
                     style="width:<?php echo round($sumt/($ntareas),3)*100/20;?>%;height:20px">
-                    <?php echo ($sumt-$w7)."Tar encarg=".round(($sumt-$w7)/(6),3);?>
+                    <?php echo ($sumt-$w7)." Tar encarg=".round(($sumt-$w7)/(6),3);?>
                 </div>
             </div>
             <div class="progress small my-1" style="height:20px">
-                <div class="progress-bar bg-secondary  text-left p-1"
+                <div class="progress-bar bg-secondary  text-center text-info p-0"
                     style="width:<?php echo round($rsumww/($nforo*5),3);?>%;height:20px">
                     <?php echo "Asist-Part promedio=".round($rsumww/($nforo*5),3).". En vigesimal Asist-Part:".round($rsumww/($nforo*5)*20/100,3);?>
                 </div>
